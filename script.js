@@ -43,7 +43,7 @@ function calcularMedia(qtdNotas) {
     total += parseInt(inputValue, 10);
   }
 
-  const media = total / qtdNotas;
+  const media = qtdNotas / total;
   resultado.textContent = media.toFixed(2);
 }
 
