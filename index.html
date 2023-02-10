@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <label>Quantas notas quer inserir ?</label>
+        <input type="number" min="0" id="qtdNotas" />
+        <input class='botao' type="button" value="Inserir Notas" onclick="criarInputs()" />
+      </form>
+      <div class="resultado">
+        <h3>Resultado:</h3>
+        <p id="resultado">00</p>
+      </div>
+
+      <div>
+        <p class="limpar" onClick="window.location.reload()">Limpar Resultados</p>
+      </div>
+    </main>
+    <div id="snackbar">Erro! Preencha todos os campos</div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
